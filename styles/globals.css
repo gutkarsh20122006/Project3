@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+@layer utilities {
+  .prose-custom {
+    @apply leading-relaxed;
+  }
+
+  .prose-custom p {
+    @apply mb-3;
+  }
+
+  .prose-custom ul {
+    @apply list-disc pl-5 mb-3;
+  }
+
+  .prose-custom ol {
+    @apply list-decimal pl-5 mb-3;
+  }
+
+  .prose-custom code {
+    @apply bg-slate-100 px-1 py-0.5 rounded text-sm font-mono;
+  }
+
+  .prose-custom pre {
+    @apply bg-slate-900 text-slate-50 p-3 rounded-lg overflow-x-auto mb-3;
+  }
+}
